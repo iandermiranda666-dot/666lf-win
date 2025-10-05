@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>666LF Win 🔥 Cassino</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader" class="preloader">
+  <div class="logo-anim" id="logoAnim">
+    <svg width="260" height="140" viewBox="0 0 260 140" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#ff5b3a"/></linearGradient>
+      </defs>
+      <rect width="260" height="140" rx="12" fill="#071021"/>
+      <g transform="translate(16,22)">
+        <text x="0" y="70" font-family="Inter, Arial" font-size="68" font-weight="800" fill="#ffffff">666</text>
+        <g id="flames" transform="translate(110,0)">
+          <path id="flameA" d="M10 60 C20 40, 30 20, 20 5 C40 25, 55 25, 60 5 C50 30, 40 40, 30 60 Z" fill="url(#g1)">
+            <animate attributeName="d" dur="1.6s" repeatCount="indefinite"
+              values="M10 60 C20 40, 30 20, 20 5 C40 25, 55 25, 60 5 C50 30, 40 40, 30 60 Z;
+                      M10 60 C18 38, 32 18, 24 6 C44 28, 56 22, 62 6 C52 34, 38 44, 30 60 Z;
+                      M10 60 C20 40, 30 20, 20 5 C40 25, 55 25, 60 5 C50 30, 40 40, 30 60 Z"/>
+          </path>
+        </g>
+        <text x="130" y="70" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#00a2ff">LF Win</text>
+      </g>
+    </svg>
+  </div>
+  <div class="loading-text">Entrando na 666LF Win... 💎 Aguarde um instante, campeão!</div>
+</div>
+
+<!-- App -->
+<div id="app" class="app hidden">
+  <aside class="sidebar">
+    <div class="logoRow">
+      <div class="logoBox" id="logoBox"></div>
+      <div>
+        <div class="logoTitle">666LF <span class="accent">Win 🔥 Cassino</span></div>
+        <div class="small">Bem-vindo ao Cassino</div>
+      </div>
+    </div>
+    <div class="balance card">
+      <div class="small">Usuário</div>
+      <div id="userName" class="userName">Convidado</div>
+      <div class="small">Saldo: <span id="bal">1000</span> coins</div>
+    </div>
+    <nav class="menu">
+      <button class="btn" data-view="dashboard">Painel</button>
+      <button class="btn" data-view="crash">Crash</button>
+      <button class="btn" data-view="slots">Slots</button>
+      <button class="btn" data-view="roleta">Roleta</button>
+      <button class="btn" data-view="history">Histórico</button>
+      <button class="btn danger" id="logoutBtn">Sair</button>
+    </nav>
+    <div class="footer">Modo demonstração — créditos fictícios</div>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <div class="header-left">
+        <div class="topUser">Olá, <b id="topName">Convidado</b></div>
+        <div class="topBalance">Saldo: <b id="topBal">1000</b> coins</div>
+      </div>
+      <div class="header-right">
+        <input id="quickBet" placeholder="Aposta ex: 50" />
+        <button class="btn primary" id="topUp">+100</button>
+      </div>
+    </header>
+
+    <section id="mainArea" class="mainArea"></section>
+  </main>
+
+  <div id="chatBtn" class="chatBtn">WA</div>
+  <div id="chatBubble" class="chatBubble hidden" role="dialog" aria-hidden="true">
+    <div class="chatHeader">
+      <div><strong>Suporte 666LF</strong><div class="small">WhatsApp (demo)</div></div>
+      <div id="closeChat" class="closeX">✖</div>
+    </div>
+    <div id="chatMessages" class="chatMessages">
+      <div class="msg bot">👋 Olá! Bem-vindo à 666LF Win 🔥<br/>Como posso te ajudar hoje, campeão?</div>
+    </div>
+    <div class="chatInput">
+      <input id="chatInput" placeholder="Escreve aqui..." />
+      <button class="btn primary" id="sendChat">Enviar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Auth modal -->
+<div id="authModal" class="modal hidden">
+  <div class="modalContent card">
+    <h3 id="authTitle">Entrar</h3>
+    <div class="authBody">
+      <div class="field"><label>Email</label><input id="authEmail" /></div>
+      <div class="field"><label>Senha</label><input id="authPass" type="password" /></div>
+      <div class="field"><label>Nome (só ao registrar)</label><input id="authName" /></div>
+      <div class="authButtons">
+        <button class="btn primary" id="signinBtn">Entrar</button>
+        <button class="btn" id="registerBtn">Registrar</button>
+        <button class="btn" id="closeAuth">Fechar</button>
+      </div>
+      <div class="small">Conta admin: admin@666lf.win / admin123</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
