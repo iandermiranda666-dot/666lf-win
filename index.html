@@ -10,7 +10,7 @@
 <!-- Preloader -->
 <div id="preloader" class="preloader">
   <div class="logo-anim" id="logoAnim">
-    <svg width="260" height="140" viewBox="0 0 260 140" xmlns="http://www.w3.org/2000/svg">
+    <svg width="260" height="140" viewBox="0 0 260 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>
         <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#ff5b3a"/></linearGradient>
       </defs>
@@ -32,46 +32,63 @@
   <div class="loading-text">Entrando na 666LF Win... 💎 Aguarde um instante, campeão!</div>
 </div>
 
-<!-- App -->
 <div id="app" class="app hidden">
-  <aside class="sidebar">
-    <div class="logoRow">
-      <div class="logoBox" id="logoBox"></div>
-      <div>
-        <div class="logoTitle">666LF <span class="accent">Win 🔥 Cassino</span></div>
-        <div class="small">Bem-vindo ao Cassino</div>
+  <header class="topbar">
+    <div class="topbar-left">
+      <!-- logo left -->
+      <div class="logo-left">
+        <svg width="120" height="48" viewBox="0 0 220 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#ff5b3a"/></linearGradient></defs>
+          <rect width="220" height="48" rx="8" fill="#071021"/>
+          <g transform="translate(8,6)">
+            <text x="0" y="34" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#ffffff">666</text>
+            <path d="M86 4 C92 0,100 0,104 4 C100 10,96 14,88 20" fill="url(#g2)">
+              <animate attributeName="d" dur="1.6s" repeatCount="indefinite" values="M86 4 C92 0,100 0,104 4 C100 10,96 14,88 20; M86 4 C90 0,98 1,106 4 C100 12,96 16,88 20; M86 4 C92 0,100 0,104 4 C100 10,96 14,88 20"/>
+            </path>
+            <text x="120" y="34" font-family="Inter, Arial" font-size="14" font-weight="800" fill="#00a2ff">LF Win</text>
+          </g>
+        </svg>
       </div>
     </div>
-    <div class="balance card">
-      <div class="small">Usuário</div>
-      <div id="userName" class="userName">Convidado</div>
-      <div class="small">Saldo: <span id="bal">1000</span> coins</div>
+    <div class="topbar-right">
+      <div class="top-actions">
+        <button class="btn small" id="openAuth">Entrar / Registrar</button>
+      </div>
     </div>
-    <nav class="menu">
-      <button class="btn" data-view="dashboard">Painel</button>
-      <button class="btn" data-view="crash">Crash</button>
-      <button class="btn" data-view="slots">Slots</button>
-      <button class="btn" data-view="roleta">Roleta</button>
-      <button class="btn" data-view="history">Histórico</button>
-      <button class="btn danger" id="logoutBtn">Sair</button>
-    </nav>
-    <div class="footer">Modo demonstração — créditos fictícios</div>
-  </aside>
+  </header>
 
-  <main class="main">
-    <header class="header">
-      <div class="header-left">
-        <div class="topUser">Olá, <b id="topName">Convidado</b></div>
-        <div class="topBalance">Saldo: <b id="topBal">1000</b> coins</div>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="balance card">
+        <div class="small">Usuário</div>
+        <div id="userName" class="userName">Convidado</div>
+        <div class="small">Saldo: <span id="bal">1000</span> coins</div>
       </div>
-      <div class="header-right">
-        <input id="quickBet" placeholder="Aposta ex: 50" />
-        <button class="btn primary" id="topUp">+100</button>
-      </div>
-    </header>
+      <nav class="menu">
+        <button class="btn" data-view="dashboard">Painel</button>
+        <button class="btn" data-view="crash">Crash</button>
+        <button class="btn" data-view="slots">Slots</button>
+        <button class="btn" data-view="roleta">Roleta</button>
+        <button class="btn" data-view="history">Histórico</button>
+      </nav>
+      <div class="footer">Modo demonstração — créditos fictícios</div>
+    </aside>
 
-    <section id="mainArea" class="mainArea"></section>
-  </main>
+    <main class="main">
+      <header class="header">
+        <div class="header-left">
+          <div class="topUser">Olá, <b id="topName">Convidado</b></div>
+          <div class="topBalance">Saldo: <b id="topBal">1000</b> coins</div>
+        </div>
+        <div class="header-right">
+          <input id="quickBet" placeholder="Aposta ex: 50" />
+          <button class="btn primary" id="topUp">+100</button>
+        </div>
+      </header>
+
+      <section id="mainArea" class="mainArea"></section>
+    </main>
+  </div>
 
   <div id="chatBtn" class="chatBtn">WA</div>
   <div id="chatBubble" class="chatBubble hidden" role="dialog" aria-hidden="true">

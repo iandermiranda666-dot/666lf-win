@@ -1,4 +1,4 @@
-666LF Win v5 - Visual-only (PT-BR)
+666LF Win v6 - Left logo, visual final (PT-BR)
 
 Conteúdo:
 - index.html
@@ -9,7 +9,7 @@ Conteúdo:
 - vercel.json
 
 Observações:
-- Visual finalizado: fundo azul-escuro/preto, logo com chamas animadas (SVG), animações nos jogos (Crash, Slots, Roleta) e transições suaves.
-- Não há sons (visual-only) conforme solicitado.
+- Visual: fundo azul-escuro/preto, logo com chamas animadas à esquerda, animações nos jogos (Crash, Slots, Roleta) e transições suaves.
+- Sem sons (visual-only).
 - Para publicar: faça upload dos arquivos no repositório GitHub e redeploy no Vercel (Framework: Other).
 Admin demo: admin@666lf.win / admin123

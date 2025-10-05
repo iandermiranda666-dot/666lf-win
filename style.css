@@ -1,36 +1,32 @@
-/* style.css - visual-only final */
+/* style.css v6 - left logo */
 :root{
-  --blue:#008cff; --dark:#071421; --panel:#0f1720; --accent:#00e0ff; --muted:#9fb6dd;
+  --blue:#0077ff; --dark:#071426; --panel:#0b1220; --accent:#00d4ff; --muted:#9fb6dd;
 }
 *{box-sizing:border-box;font-family:Inter,Arial,Helvetica,sans-serif}
-body{margin:0;background:linear-gradient(180deg,#030416,#071426);color:#e6eef8}
+body{margin:0;background:linear-gradient(180deg,#030316,#071426);color:#e6eef8}
 .hidden{display:none}
-.preloader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:#02040a;z-index:80}
+.preloader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:#02040a;z-index:200}
 .loading-text{color:var(--muted)}
-.app{display:flex;min-height:100vh}
-.sidebar{width:300px;padding:18px;background:linear-gradient(180deg,#020308,#08101a);display:flex;flex-direction:column;gap:14px;box-shadow:2px 0 40px rgba(2,6,23,0.7)}
-.logoBox{width:72px;height:72px;border-radius:12px;background:linear-gradient(180deg,var(--blue),#2f8fff)}
-.logoTitle{font-weight:800;font-size:18px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:transparent;position:sticky;top:0;z-index:150}
+.logo-left{display:flex;align-items:center;gap:12px}
+.layout{display:flex;min-height:calc(100vh - 72px)}
+.sidebar{width:280px;padding:18px;background:linear-gradient(180deg,#020308,#08101a);display:flex;flex-direction:column;gap:14px;box-shadow:2px 0 40px rgba(2,6,23,0.7)}
 .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);backdrop-filter: blur(4px)}
-.balance .small{font-size:13px;color:var(--muted)}
 .menu{display:flex;flex-direction:column;gap:10px;margin-top:6px}
 .btn{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:12px;border-radius:12px;cursor:pointer;color:inherit;transition:all .18s ease}
 .btn.primary{background:linear-gradient(90deg,var(--blue),#2f8fff);border:none;color:#001;font-weight:800;box-shadow:0 8px 26px rgba(0,0,0,0.45)}
 .btn:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,0.5);filter:brightness(1.02)}
-.btn.danger{background:transparent;border:1px solid rgba(255,90,90,0.2);color:#ffb3b3}
 .main{flex:1;padding:22px;display:flex;flex-direction:column}
 .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-.header-left{display:flex;flex-direction:column}
 .topUser{font-size:14px}
 .topBalance{font-size:18px;font-weight:800}
 .mainArea{display:block}
 .chatBtn{position:fixed;right:18px;bottom:18px;width:64px;height:64px;border-radius:50%;background:linear-gradient(180deg,var(--blue),#2f8fff);display:flex;align-items:center;justify-content:center;color:#001;font-weight:900;cursor:pointer;box-shadow:0 14px 30px rgba(0,0,0,0.6)}
-.chatBubble{position:fixed;right:92px;bottom:18px;width:380px;background:linear-gradient(180deg,#071422,#071426);border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.04);z-index:90;display:flex;flex-direction:column;gap:8px}
+.chatBubble{position:fixed;right:92px;bottom:18px;width:380px;background:linear-gradient(180deg,#071422,#071426);border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.04);z-index:190;display:flex;flex-direction:column;gap:8px}
 .chatMessages{max-height:320px;overflow:auto;display:flex;flex-direction:column;gap:8px}
 .msg{background:#0e1a2a;padding:8px;border-radius:10px;color:#dbeeff;font-size:14px;max-width:80%}
 .msg.me{background:#12324b;margin-left:auto}
-.chatInput{display:flex;gap:8px}
-.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);z-index:95}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);z-index:210}
 .modalContent{width:480px}
 .field{margin-bottom:8px}
 .field input{width:100%;padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:inherit}

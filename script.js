@@ -1,4 +1,4 @@
-// script.js - visual-only final (no sounds)
+// script.js v6 - left logo, visual-only
 const APP = {
   init(){
     this.users = JSON.parse(localStorage.getItem('lf_users')||'{}');
@@ -7,11 +7,11 @@ const APP = {
     setTimeout(()=>{ document.getElementById('preloader').classList.add('hidden'); document.getElementById('app').classList.remove('hidden'); this.showAuth(); }, 1200);
   },
   bindUI(){
+    document.getElementById('openAuth').onclick = ()=>this.showAuth();
     document.getElementById('signinBtn').onclick = ()=>this.signIn();
     document.getElementById('registerBtn').onclick = ()=>this.register();
     document.getElementById('closeAuth').onclick = ()=>this.hideAuth();
     document.querySelectorAll('.menu .btn').forEach(b=>b.onclick = ()=>{ const v=b.dataset.view; if(v) this.changeView(v); });
-    document.getElementById('logoutBtn').onclick = ()=>this.logout();
     document.getElementById('topUp').onclick = ()=>{ if(this.current){ this.current.balance+=100; this.save(); this.updateUI(); alert('+100 coins (demo)'); } };
     document.getElementById('chatBtn').onclick = ()=>{ document.getElementById('chatBubble').classList.toggle('hidden'); };
     document.getElementById('closeChat').onclick = ()=>{ document.getElementById('chatBubble').classList.add('hidden'); };
